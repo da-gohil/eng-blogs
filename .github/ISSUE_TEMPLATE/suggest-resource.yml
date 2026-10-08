@@ -1,0 +1,61 @@
+name: Suggest a resource
+description: Recommend a blog, book, course, paper, or tool for the directory.
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! The bar is "would I send this to a friend who wants to become a better engineer?"
+        Active, substantive, and free-to-read resources are the best fit.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Figma Engineering
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - System Design
+        - Interview Prep
+        - CS Fundamentals
+        - Papers & Essays
+        - Engineers & Writers
+        - Craft & Career
+        - AI & ML
+        - Security
+        - Languages & Web
+        - News, Podcasts & Talks
+        - Big Tech
+        - Consumer & Social
+        - Marketplaces & Commerce
+        - SaaS & Productivity
+        - FinTech & Trading
+        - Cloud & DevTools
+        - Data & Databases
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it great?
+      description: One or two sentences — what will readers learn from it?
+    validations:
+      required: true
+  - type: input
+    id: first-read
+    attributes:
+      label: A great first post (optional)
+      placeholder: https://

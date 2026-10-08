@@ -1,0 +1,177 @@
+export default [
+  {
+    id: "tech-interview-handbook",
+    name: "Tech Interview Handbook",
+    url: "https://www.techinterviewhandbook.org/",
+    type: "guide",
+    cost: "free",
+    author: "Yangshun Tay",
+    featured: true,
+    topics: ["interviews", "algorithms", "career"],
+    description:
+      "A free, battle-tested guide to the whole process: resumes, algorithm cheat sheets, behavioral questions, and negotiating offers.",
+    picks: [
+      { title: "Behavioral interview guide", url: "https://www.techinterviewhandbook.org/behavioral-interview/" },
+    ],
+  },
+  {
+    id: "coding-interview-patterns",
+    name: "Coding Interview Patterns",
+    url: "https://www.amazon.com/dp/1736049135",
+    type: "book",
+    cost: "paid",
+    author: "Alex Xu & Shaun Gunawardane",
+    featured: true,
+    topics: ["algorithms", "interviews"],
+    description:
+      "101 problems organized into 19 patterns — two pointers, sliding windows, graphs, dynamic programming — with 1,000+ diagrams that make the insight visible.",
+    links: [
+      { label: "Read online", url: "https://bytebytego.com/courses/coding-patterns" },
+      { label: "Solutions repo", url: "https://github.com/ByteByteGoHq/coding-interview-patterns" },
+    ],
+  },
+  {
+    id: "object-oriented-design-interview",
+    name: "Object-Oriented Design Interview",
+    url: "https://www.amazon.com/dp/173604916X",
+    type: "book",
+    cost: "paid",
+    author: "Fawaz Bokhari, Alex Xu & Desmond Zhou",
+    topics: ["architecture", "interviews"],
+    description:
+      "A 4-step method for low-level design rounds, applied to 11 classic questions such as a parking lot, an elevator, an ATM, and Blackjack.",
+    links: [{ label: "Read online", url: "https://bytebytego.com/courses/object-oriented-design-interview" }],
+  },
+  {
+    id: "bytebytego-behavioral",
+    name: "Behavioral Interview (ByteByteGo)",
+    url: "https://bytebytego.com/courses/behavioral-interview",
+    type: "course",
+    cost: "paid",
+    author: "ByteByteGo",
+    topics: ["interviews", "career"],
+    description:
+      "What companies look for and how to tell high-signal stories, organized around competencies like initiative, delivery, conflict, and leadership.",
+  },
+  {
+    id: "bytebytego-resume",
+    name: "How to Write a Good Resume (ByteByteGo)",
+    url: "https://bytebytego.com/courses/tech-resume",
+    type: "course",
+    cost: "paid",
+    author: "ByteByteGo",
+    topics: ["interviews", "career"],
+    description:
+      "How the hiring pipeline works and how to write a resume that survives it, with templates and before-and-after examples.",
+  },
+  {
+    id: "neetcode",
+    name: "NeetCode",
+    url: "https://neetcode.io/",
+    type: "practice",
+    cost: "freemium",
+    featured: true,
+    topics: ["algorithms", "interviews"],
+    description: "The NeetCode 150 roadmap: problems grouped by pattern, each paired with a clear video explanation.",
+  },
+  {
+    id: "grind-75",
+    name: "Grind 75",
+    url: "https://www.techinterviewhandbook.org/grind75/",
+    type: "practice",
+    cost: "free",
+    author: "Yangshun Tay",
+    topics: ["algorithms", "interviews"],
+    description:
+      "A customizable, week-by-week LeetCode study plan from the author of the original Blind 75 list.",
+  },
+  {
+    id: "leetcode",
+    name: "LeetCode",
+    url: "https://leetcode.com/",
+    type: "practice",
+    cost: "freemium",
+    topics: ["algorithms", "interviews"],
+    description:
+      "The standard practice platform for coding interviews, with company-tagged questions, weekly contests, and study plans.",
+  },
+  {
+    id: "leetcode-patterns",
+    name: "LeetCode Patterns",
+    url: "https://seanprashad.com/leetcode-patterns/",
+    type: "practice",
+    cost: "free",
+    author: "Sean Prashad",
+    topics: ["algorithms", "interviews"],
+    description: "A filterable list of curated LeetCode problems grouped by pattern, difficulty, and company.",
+  },
+  {
+    id: "beyond-ctci",
+    name: "Beyond Cracking the Coding Interview",
+    url: "https://www.beyondctci.com/",
+    type: "book",
+    cost: "paid",
+    author: "Gayle Laakmann McDowell, Mike Mroczka, Aline Lerner & Nil Mamano",
+    topics: ["interviews", "algorithms", "career"],
+    description:
+      "The official 2025 sequel to Cracking the Coding Interview: how hiring has changed, 150+ new problems, and how to get referrals and negotiate.",
+    links: [
+      {
+        label: "9 free chapters",
+        url: "https://interviewing.io/blog/nine-free-chapters-of-beyond-cracking-the-coding-interview",
+      },
+    ],
+  },
+  {
+    id: "epi",
+    name: "Elements of Programming Interviews",
+    url: "https://elementsofprogramminginterviews.com/",
+    type: "book",
+    cost: "paid",
+    author: "Adnan Aziz, Tsung-Hsien Lee & Amit Prakash",
+    topics: ["algorithms", "interviews"],
+    description:
+      "Hard, thorough problem sets with rigorous solutions in Python, Java, or C++ — the next step once the basics feel easy.",
+  },
+  {
+    id: "interviewing-io",
+    name: "interviewing.io",
+    url: "https://interviewing.io/",
+    type: "practice",
+    cost: "freemium",
+    topics: ["interviews", "system-design"],
+    description:
+      "Anonymous mock interviews with senior engineers from top companies, plus a free library of recorded real interviews.",
+  },
+  {
+    id: "aced",
+    name: "Aced (formerly Exponent)",
+    url: "https://www.aced.io/",
+    type: "practice",
+    cost: "paid",
+    topics: ["interviews", "system-design"],
+    description:
+      "Courses, a large question bank, and peer mock interviews for software engineering, system design, and product roles.",
+  },
+  {
+    id: "frontend-interview-handbook",
+    name: "Front End Interview Handbook",
+    url: "https://www.frontendinterviewhandbook.com/",
+    type: "guide",
+    cost: "free",
+    author: "Yangshun Tay",
+    topics: ["frontend", "interviews"],
+    description:
+      "A free, comprehensive guide to front-end interviews: JavaScript, CSS, UI coding, quiz questions, and front-end system design.",
+  },
+  {
+    id: "greatfrontend",
+    name: "GreatFrontEnd",
+    url: "https://www.greatfrontend.com/",
+    type: "practice",
+    cost: "freemium",
+    topics: ["frontend", "interviews"],
+    description:
+      "Front-end interview practice from ex-FAANG engineers: JavaScript and UI coding questions, front-end system design, and study plans.",
+  },
+];

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Local env files (e.g. VITE_REPO_URL for local previews)
+*.local
+.env
+.env.*
+!.env.example
+
+# Reports
+link-report.md
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editors & OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?
