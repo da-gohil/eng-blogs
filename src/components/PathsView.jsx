@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { PATH_BY_ID, PATHS } from "../data/paths.js";
+import { revealActive } from "../lib/dom.js";
 import { RESOURCE_BY_ID } from "../data/resources/index.js";
 import { CompactResource } from "./ResourceCard.jsx";
 import Icon from "./Icon.jsx";
@@ -57,12 +58,7 @@ export default function PathsView({ pathId, progress, onToggleStep, onResetPath,
   const navRef = useRef(null);
 
   // On narrow screens the path picker scrolls sideways; keep the active path visible.
-  useEffect(() => {
-    const nav = navRef.current;
-    const active = nav?.querySelector('[aria-current="true"]');
-    if (!nav || !active || nav.scrollWidth <= nav.clientWidth) return;
-    nav.scrollTo({ left: active.offsetLeft - nav.offsetLeft - 16 });
-  }, [path.id]);
+  useEffect(() => revealActive(navRef.current), [path.id]);
 
   return (
     <div className="container page">

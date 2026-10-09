@@ -1,7 +1,8 @@
-import { useDeferredValue, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { RESOURCES } from "../data/resources/index.js";
 import { CATEGORIES, CATEGORY_BY_ID, CATEGORY_GROUPS, TOPICS, TYPE_BY_ID, TYPES } from "../data/taxonomy.js";
 import { setAppState } from "../hooks/useAppState.js";
+import { revealActive } from "../lib/dom.js";
 import { buildIndex, countByCategory, filterResources, groupByCategory, sortResults, tokenize } from "../lib/search.js";
 import { DEFAULT_STATE, hasActiveFilters } from "../lib/url-state.js";
 import { SITE, suggestUrl } from "../site.config.js";
@@ -140,6 +141,10 @@ function Toolbar({ state, results, hasQuery }) {
 }
 
 function CategoryNav({ active, counts }) {
+  const navRef = useRef(null);
+  // On phones the categories are a sideways-scrolling row; keep the active one visible.
+  useEffect(() => revealActive(navRef.current), [active]);
+
   const item = (id, label, count, icon) => (
     <li key={id}>
       <AppLink
@@ -156,7 +161,7 @@ function CategoryNav({ active, counts }) {
   );
 
   return (
-    <nav className="catnav" aria-label="Categories">
+    <nav className="catnav" aria-label="Categories" ref={navRef}>
       <ul className="catnav__list">
         {item("all", "All resources", counts.all)}
         {item("essentials", "Essentials", counts.essentials, "star")}

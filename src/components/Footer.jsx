@@ -36,6 +36,11 @@ export default function Footer() {
                 </AppLink>
               </li>
               <li>
+                <AppLink to={{ view: "explore", category: "lld" }} scroll="directory">
+                  Low-level design
+                </AppLink>
+              </li>
+              <li>
                 <AppLink to={{ view: "paths" }}>Learning paths</AppLink>
               </li>
               <li>

@@ -16,7 +16,7 @@ export const STORAGE_KEYS = {
 };
 
 /** Matches --bg in styles/global.css; used for the browser's theme-color. */
-export const THEME_COLORS = { light: "#f7f7f9", dark: "#0b0b0f" };
+export const THEME_COLORS = { light: "#f5f5f7", dark: "#000000" };
 
 export function suggestUrl(repoUrl) {
   return repoUrl ? `${repoUrl}/issues/new?template=suggest-resource.yml` : "";

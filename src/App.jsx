@@ -51,6 +51,12 @@ function PathsTeaser({ progress }) {
           {PATHS.map((path) => (
             <PathCard key={path.id} path={path} done={stepsDone(path, progress)} />
           ))}
+          <AppLink to={{ view: "paths" }} className="path-card path-card--cta">
+            <span className="path-card__title">
+              All learning paths <Icon name="chevron-right" size={16} />
+            </span>
+            <span className="path-card__summary">See every roadmap side by side, with your progress on each.</span>
+          </AppLink>
         </div>
       </div>
     </section>

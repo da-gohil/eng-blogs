@@ -70,17 +70,18 @@ function notFoundPage(home) {
     <title>Page not found · Engineering Blogs</title>
     <link rel="icon" type="image/svg+xml" href="${home}favicon.svg" />
     <style>
-      :root { color-scheme: light dark; --bg: #f7f7f9; --text: #0f0f14; --muted: #5b5b67; --card: #fff; --border: #e3e3ea; }
-      @media (prefers-color-scheme: dark) { :root { --bg: #0b0b0f; --text: #f3f3f7; --muted: #a8a8b4; --card: #131319; --border: #25252f; } }
+      :root { color-scheme: light dark; --bg: #f5f5f7; --text: #1d1d1f; --muted: #6e6e73; --card: #fff; --border: #e8e8ed; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #000; --text: #f5f5f7; --muted: #a1a1a6; --card: #1c1c1e; --border: #2c2c2e; } }
       * { box-sizing: border-box; }
       body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: var(--bg); color: var(--text);
-        font: 16px/1.55 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-      main { max-width: 440px; padding: 40px 32px; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 20px; }
-      .code { font-size: 64px; font-weight: 800; letter-spacing: -0.05em; line-height: 1;
-        background: linear-gradient(100deg, #6366f1, #a855f7 45%, #ec4899); -webkit-background-clip: text; background-clip: text; color: transparent; }
-      h1 { margin: 12px 0 8px; font-size: 22px; letter-spacing: -0.02em; }
+        font: 17px/1.47 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+      main { max-width: 440px; padding: 40px 32px; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 18px; }
+      .code { font-size: 64px; font-weight: 700; letter-spacing: -0.03em; line-height: 1;
+        background: linear-gradient(90deg, #0090f7, #ba62fc 50%, #f2416b 82%, #f55600); -webkit-background-clip: text; background-clip: text; color: transparent; }
+      h1 { margin: 12px 0 8px; font-size: 24px; font-weight: 600; letter-spacing: -0.015em; }
       p { margin: 0 0 24px; color: var(--muted); }
-      a { display: inline-block; padding: 12px 20px; border-radius: 12px; background: var(--text); color: var(--bg); font-weight: 600; text-decoration: none; }
+      a { display: inline-block; padding: 12px 22px; border-radius: 980px; background: #0071e3; color: #fff; font-weight: 500; text-decoration: none; }
+      a:hover { background: #0077ed; }
     </style>
   </head>
   <body>

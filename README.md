@@ -6,8 +6,9 @@
 
 **Read what the best engineers are writing.**
 
-A curated, link-checked library of **380 resources**: company engineering blogs, Alex Xu's _System Design Interview_
-series, classic papers, free courses, and step-by-step learning paths, for anyone who wants to become a better engineer.
+A curated, link-checked library of **399 resources**: company engineering blogs, Alex Xu's _System Design Interview_
+series, low-level design guides, classic papers, free courses, and step-by-step learning paths, for anyone who wants to
+become a better engineer.
 
 [**Open the live site →**](https://da-gohil.github.io/eng-blogs/)
 &nbsp;·&nbsp; [Suggest a resource](https://github.com/da-gohil/eng-blogs/issues/new?template=suggest-resource.yml)
@@ -25,8 +26,9 @@ series, classic papers, free courses, and step-by-step learning paths, for anyon
 | Category | Resources | Highlights |
 | --- | ---: | --- |
 | **Learn & grow** | | |
-| System Design | 33 | ByteByteGo, System Design Interview Vol. 1 & 2, System Design 101, The System Design Primer, DDIA |
-| Interview Prep | 15 | Tech Interview Handbook, Coding Interview Patterns, NeetCode, Object-Oriented Design Interview |
+| System Design | 32 | ByteByteGo, System Design Interview Vol. 1 & 2, System Design 101, The System Design Primer, DDIA |
+| Low-Level Design | 21 | Object-Oriented Design Interview, Head First Design Patterns, Refactoring.Guru, Awesome LLD, Hello Interview LLD |
+| Interview Prep | 14 | Tech Interview Handbook, Coding Interview Patterns, NeetCode, Grind 75 |
 | CS Fundamentals | 29 | The Missing Semester, OSTEP, CMU 15-445 Databases, MIT 6.5840 Distributed Systems |
 | Papers & Essays | 26 | Dynamo, Raft, Lamport's _Time, Clocks_, _The Log_, Spanner, Attention Is All You Need |
 | Engineers & Writers | 52 | Martin Fowler, Dan Luu, Julia Evans, Marc Brooker, Simon Willison, Jepsen |
@@ -44,9 +46,9 @@ series, classic papers, free courses, and step-by-step learning paths, for anyon
 | Cloud & DevTools | 18 | Cloudflare, GitHub, Fly.io, Tailscale, Datadog, Temporal |
 | Data & Databases | 18 | PlanetScale, Cockroach Labs, Confluent, Databricks, ClickHouse, DuckDB |
 
-Of the 380, there are 197 blogs, 39 books, 22 courses, 21 papers, 28 guides, 16 newsletters, 14 essays,
-14 practice platforms, 10 video channels, 9 GitHub repos, 7 podcasts, and 3 communities. **59 are marked _Essential_**,
-112 are completely free, and many blogs come with hand-picked "start with" posts.
+Of the 399, there are 197 blogs, 46 books, 33 guides, 23 courses, 21 papers, 16 newsletters, 15 essays,
+14 practice platforms, 12 video channels, 12 GitHub repos, 7 podcasts, and 3 communities. **63 are marked _Essential_**,
+123 are completely free, and many blogs come with hand-picked "start with" posts.
 
 ### Featured: _System Design Interview_ by Alex Xu
 
@@ -70,11 +72,12 @@ Free from ByteByteGo: the [System Design 101](https://github.com/ByteByteGoHq/sy
 Ordered roadmaps through the catalog. Check off steps as you go, and your progress is saved in your browser.
 
 1. **[Ace the System Design Interview](https://da-gohil.github.io/eng-blogs/?view=paths&path=system-design-interview)** (Intermediate · 6–8 weeks · 8 steps). Alex Xu's books as the spine, then the building blocks, real-world architectures, and classic papers.
-2. **[Crack the Coding Interview](https://da-gohil.github.io/eng-blogs/?view=paths&path=coding-interview)** (Beginner → Intermediate · 6–10 weeks · 7 steps). Patterns instead of memorized problems, plus OOD, behavioral, and negotiation.
-3. **[Distributed Systems, Deeply](https://da-gohil.github.io/eng-blogs/?view=paths&path=distributed-systems)** (Advanced · 3 months · 7 steps). The theory, the papers, implementing Raft yourself, and how real systems fail.
-4. **[Become an AI Engineer](https://da-gohil.github.io/eng-blogs/?view=paths&path=ai-engineer)** (Intermediate · 8–12 weeks · 7 steps). From backpropagation to transformers to shipping LLM products with evals.
-5. **[Grow Into a Senior & Staff Engineer](https://da-gohil.github.io/eng-blogs/?view=paths&path=senior-staff)** (All levels · Ongoing · 8 steps). Design judgment, clear writing, visible impact, and habits that compound.
-6. **[CS Foundations for Working Engineers](https://da-gohil.github.io/eng-blogs/?view=paths&path=cs-foundations)** (Beginner → Intermediate · Self-paced · 8 steps). Tools, operating systems, networks, databases, and algorithms, all with free material.
+2. **[Master Low-Level Design](https://da-gohil.github.io/eng-blogs/?view=paths&path=low-level-design)** (Intermediate · 4–6 weeks · 8 steps). SOLID, the core design patterns, a repeatable LLD framework, classic problems, concurrency, and timed mock rounds.
+3. **[Crack the Coding Interview](https://da-gohil.github.io/eng-blogs/?view=paths&path=coding-interview)** (Beginner → Intermediate · 6–10 weeks · 7 steps). Patterns instead of memorized problems, plus OOD, behavioral, and negotiation.
+4. **[Distributed Systems, Deeply](https://da-gohil.github.io/eng-blogs/?view=paths&path=distributed-systems)** (Advanced · 3 months · 7 steps). The theory, the papers, implementing Raft yourself, and how real systems fail.
+5. **[Become an AI Engineer](https://da-gohil.github.io/eng-blogs/?view=paths&path=ai-engineer)** (Intermediate · 8–12 weeks · 7 steps). From backpropagation to transformers to shipping LLM products with evals.
+6. **[Grow Into a Senior & Staff Engineer](https://da-gohil.github.io/eng-blogs/?view=paths&path=senior-staff)** (All levels · Ongoing · 8 steps). Design judgment, clear writing, visible impact, and habits that compound.
+7. **[CS Foundations for Working Engineers](https://da-gohil.github.io/eng-blogs/?view=paths&path=cs-foundations)** (Beginner → Intermediate · Self-paced · 8 steps). Tools, operating systems, networks, databases, and algorithms, all with free material.
 
 ## Features
 
@@ -82,10 +85,11 @@ Ordered roadmaps through the catalog. Check off steps as you go, and your progre
 - **Filters in the URL.** Category, format, topics, and sort are kept in the query string (`?q=kafka&cat=data`), so every view can be bookmarked and shared, and the back button works.
 - **Saved reading list.** Bookmark anything and export the list as Markdown. It's stored only in your browser.
 - **Learning-path progress.** Check off steps; progress persists across visits.
-- **Light and dark themes.** Follows your OS setting, with a manual toggle.
+- **Apple-inspired design.** SF Pro type, Apple's `#f5f5f7`/`#1d1d1f` palette, blue pill buttons, a true-black dark mode, and
+  iOS-style icon tiles. It follows your OS light/dark setting, with a manual toggle.
 - **Fast.** HTML is prerendered (content appears before JavaScript loads), logos are self-hosted, there are no web fonts, and the JS is about 125 KB gzipped.
 - **Accessible.** Semantic landmarks, a skip link, full keyboard support, visible focus, ARIA states, reduced-motion support, and AA color contrast.
-- **Link-checked.** A weekly GitHub Action tests all ~450 links and opens an issue when something breaks.
+- **Link-checked.** A weekly GitHub Action tests all ~470 links and opens an issue when something breaks.
 - **Private.** No analytics, cookies, ads, or third-party requests at runtime.
 
 | Dark mode | Learning paths |

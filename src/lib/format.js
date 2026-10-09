@@ -38,11 +38,14 @@ export function initials(name) {
   return letters.join("") || "?";
 }
 
-/** A stable hue (0–359) derived from a string, for monogram colors. */
-export function hueFor(text) {
+/** Apple system colors used for monogram and glyph tiles (see .res-icon--tint-*). */
+export const TINTS = ["blue", "indigo", "purple", "pink", "red", "orange", "green", "teal", "cyan"];
+
+/** A stable tint for a string, so a resource always gets the same tile color. */
+export function tintFor(text) {
   let hash = 0;
   for (const char of text) hash = (hash * 31 + char.codePointAt(0)) | 0;
-  return Math.abs(hash) % 360;
+  return TINTS[Math.abs(hash) % TINTS.length];
 }
 
 export function pluralize(count, singular, plural = `${singular}s`) {

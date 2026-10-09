@@ -239,16 +239,6 @@ export default [
       "Twelve short principles for building portable, scalable, deploy-anywhere services. Written at Heroku and still the baseline for cloud apps.",
   },
   {
-    id: "refactoring-guru",
-    name: "Refactoring.Guru: Design Patterns",
-    url: "https://refactoring.guru/design-patterns",
-    type: "guide",
-    cost: "free",
-    topics: ["architecture", "languages", "interviews"],
-    description:
-      "Illustrated explanations of the 22 classic design patterns with code in many languages — ideal prep for low-level design rounds.",
-  },
-  {
     id: "latency-numbers",
     name: "Latency Numbers Every Programmer Should Know",
     url: "https://colin-scott.github.io/personal_website/research/interactive_latency.html",

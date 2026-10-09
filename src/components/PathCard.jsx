@@ -14,7 +14,7 @@ export function ProgressBar({ done, total, label }) {
         aria-label={label}
         aria-valuetext={`${done} of ${total} steps done`}
       >
-        <div className="progress__fill" style={{ width: `${percent}%` }} />
+        <div className={`progress__fill${percent === 100 ? " is-complete" : ""}`} style={{ width: `${percent}%` }} />
       </div>
       <span className="progress__text">{done === total && total > 0 ? "Completed" : `${done}/${total} steps`}</span>
     </div>

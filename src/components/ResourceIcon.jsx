@@ -1,5 +1,5 @@
 import { ICONS } from "../data/icons.generated.js";
-import { hueFor, iconDomain, initials } from "../lib/format.js";
+import { iconDomain, initials, tintFor } from "../lib/format.js";
 import Icon from "./Icon.jsx";
 
 const GLYPH_TYPES = new Set(["book", "paper", "article"]);
@@ -24,16 +24,16 @@ export default function ResourceIcon({ resource, size = "md" }) {
     );
   }
 
-  const style = { "--hue": hueFor(resource.name) };
+  const tinted = `res-icon res-icon--${size} res-icon--tinted res-icon--tint-${tintFor(resource.name)}`;
   if (GLYPH_TYPES.has(resource.type)) {
     return (
-      <span className={`res-icon res-icon--${size} res-icon--glyph`} style={style}>
+      <span className={`${tinted} res-icon--glyph`}>
         <Icon name={resource.type} size={size === "sm" ? 15 : 19} />
       </span>
     );
   }
   return (
-    <span className={`res-icon res-icon--${size} res-icon--mono`} style={style} aria-hidden="true">
+    <span className={`${tinted} res-icon--mono`} aria-hidden="true">
       {initials(resource.name)}
     </span>
   );

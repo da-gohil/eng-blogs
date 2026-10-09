@@ -2,7 +2,6 @@ import { PATHS } from "../data/paths.js";
 import { RESOURCES } from "../data/resources/index.js";
 import { CATEGORIES } from "../data/taxonomy.js";
 import AppLink from "./AppLink.jsx";
-import Icon from "./Icon.jsx";
 
 const companyCategories = new Set(CATEGORIES.filter((c) => c.group === "companies").map((c) => c.id));
 const STATS = [
@@ -26,14 +25,15 @@ export default function Hero() {
         </h1>
         <p className="hero__lede">
           Engineering blogs from the teams behind Netflix, Stripe, and Discord, Alex Xu's System Design Interview series,
-          classic papers, free courses, and learning paths that help you become a better engineer — all in one place.
+          low-level design guides, classic papers, free courses, and learning paths that help you become a better
+          engineer — all in one place.
         </p>
         <div className="hero__actions">
           <a className="btn btn--primary btn--lg" href="#directory">
-            Browse the directory <Icon name="arrow-right" size={17} />
+            Browse the directory
           </a>
           <AppLink className="btn btn--secondary btn--lg" to={{ view: "paths" }}>
-            <Icon name="route" size={17} /> Start a learning path
+            Start a learning path
           </AppLink>
         </div>
         <dl className="stats">

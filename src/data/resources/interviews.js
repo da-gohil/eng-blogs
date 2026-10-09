@@ -31,18 +31,6 @@ export default [
     ],
   },
   {
-    id: "object-oriented-design-interview",
-    name: "Object-Oriented Design Interview",
-    url: "https://www.amazon.com/dp/173604916X",
-    type: "book",
-    cost: "paid",
-    author: "Fawaz Bokhari, Alex Xu & Desmond Zhou",
-    topics: ["architecture", "interviews"],
-    description:
-      "A 4-step method for low-level design rounds, applied to 11 classic questions such as a parking lot, an elevator, an ATM, and Blackjack.",
-    links: [{ label: "Read online", url: "https://bytebytego.com/courses/object-oriented-design-interview" }],
-  },
-  {
     id: "bytebytego-behavioral",
     name: "Behavioral Interview (ByteByteGo)",
     url: "https://bytebytego.com/courses/behavioral-interview",

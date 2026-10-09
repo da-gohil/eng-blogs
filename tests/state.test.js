@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { PATHS } from "../src/data/paths.js";
-import { displayUrl, formatDate, hueFor, iconDomain, initials } from "../src/lib/format.js";
+import { displayUrl, formatDate, iconDomain, initials, TINTS, tintFor } from "../src/lib/format.js";
 import { resetPath, sanitizeProgress, sanitizeSaved, stepsDone, toggleStep } from "../src/lib/progress.js";
 import { DEFAULT_STATE, hasActiveFilters, parseState, serializeState } from "../src/lib/url-state.js";
 
@@ -93,12 +93,12 @@ describe("format helpers", () => {
     assert.equal(iconDomain({ url: "https://www.amazon.com/dp/1", type: "book" }), null);
   });
 
-  it("builds initials and stable hues", () => {
+  it("builds initials and stable Apple-color tints", () => {
     assert.equal(initials("Dan Luu"), "DL");
     assert.equal(initials("jOOQ Blog"), "JB");
     assert.equal(initials("Lil'Log (Lilian Weng)"), "L");
-    assert.equal(hueFor("Dan Luu"), hueFor("Dan Luu"));
-    assert.ok(hueFor("anything") >= 0 && hueFor("anything") < 360);
+    assert.equal(tintFor("Dan Luu"), tintFor("Dan Luu"));
+    assert.ok(TINTS.includes(tintFor("anything")));
   });
 
   it("formats dates in UTC", () => {

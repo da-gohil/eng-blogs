@@ -17,11 +17,17 @@ export const CATEGORIES = [
       "Alex Xu's System Design Interview series, ByteByteGo, and the best guides to designing large-scale systems.",
   },
   {
+    id: "lld",
+    group: "learn",
+    label: "Low-Level Design",
+    description:
+      "Object-oriented design, SOLID, design patterns, UML, and machine-coding rounds — the code-level half of system design.",
+  },
+  {
     id: "interviews",
     group: "learn",
     label: "Interview Prep",
-    description:
-      "Coding patterns, object-oriented design, and behavioral prep — plus how to negotiate the offer.",
+    description: "Coding patterns, study plans, behavioral prep, and mock interviews — plus how to negotiate the offer.",
   },
   {
     id: "fundamentals",

@@ -47,11 +47,11 @@ export default function Spotlight() {
             </h2>
             <p className="spotlight__body">{SPOTLIGHT.body}</p>
             <div className="spotlight__actions">
-              <AppLink className="btn btn--light" to={{ view: "paths", path: SPOTLIGHT.path }}>
-                Follow the learning path <Icon name="arrow-right" size={16} />
+              <AppLink className="btn btn--primary" to={{ view: "paths", path: SPOTLIGHT.path }}>
+                Follow the learning path
               </AppLink>
-              <a className="btn btn--outline-light" href={platform.url} target="_blank" rel="noopener noreferrer">
-                Visit ByteByteGo <Icon name="arrow-up-right" size={16} />
+              <a className="btn btn--text-link" href={platform.url} target="_blank" rel="noopener noreferrer">
+                Visit ByteByteGo <Icon name="chevron-right" size={16} />
               </a>
             </div>
           </div>

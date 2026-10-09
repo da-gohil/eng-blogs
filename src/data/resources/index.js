@@ -33,6 +33,7 @@ import fundamentals from "./fundamentals.js";
 import infra from "./infra.js";
 import interviews from "./interviews.js";
 import languages from "./languages.js";
+import lld from "./lld.js";
 import marketplaces from "./marketplaces.js";
 import media from "./media.js";
 import papers from "./papers.js";
@@ -42,6 +43,7 @@ import systemDesign from "./system-design.js";
 
 export const RESOURCES_BY_CATEGORY = {
   "system-design": systemDesign,
+  lld,
   interviews,
   fundamentals,
   papers,

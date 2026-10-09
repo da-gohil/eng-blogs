@@ -32,6 +32,14 @@ const PATHS = {
     </>
   ),
   code: <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />,
+  blocks: (
+    <>
+      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+      <path d="M14 17.5h7M17.5 14v7" />
+    </>
+  ),
   network: (
     <>
       <rect x="9" y="2" width="6" height="6" rx="1.5" />
